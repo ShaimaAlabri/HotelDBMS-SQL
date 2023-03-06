@@ -229,6 +229,14 @@ public class HotaleTask {
 //	            + "hotel_id,created_date,updated_date,is_active) " +
 //	            "VALUES (" + guest_id + ",'" + guest_name + "','" + guest_phone +"'," + guest_accompanying_members + ",'"
 //	            + guest_payment_amount +"',"+ room_id +"," +hotel_IID+",'"+guest_created_date+ "','"+guets_updated_date+ "',"+guest_is_active+ ")";
+	            
+	            for(int i=0;i<10001;i++) {
+	            	System.out.println(hotel_name+i);
+	            	
+	            }
+	            
+	            
+	            
 	            System.out.println(sql);
 	            Integer m = st.executeUpdate(sql);
 	            if (m >= 1) {
