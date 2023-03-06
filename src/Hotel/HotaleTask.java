@@ -114,34 +114,20 @@ public class HotaleTask {
 				 + ");";
 				// String sql2 = "create table Hotels";
 				//
-				// String sql = "insert into Table_1 values('" + name
-//					+ "'," + roll + ",'" + cls + "')";
-//					Integer m = st.executeUpdate(sql1);
-//				 if (m >= 1) {
-//					System.out.println("inserted successfully : " + sql1);
-//					} else {
-//					System.out.println("insertion failed");
+				
 //					}
 //					ResultSet resultSet = st.executeQuery(sql1);
-				// while (resultSet.next()) {
-//					System.out.println(resultSet.getString("name"));
-//					System.out.println(resultSet.getString("roll"));
-//					System.out.println(resultSet.getString("cls"));
-//					}
+
 //				 con.close();
 //					} catch (Exception ex) {
 //					System.err.println(ex);
 //					}
 
-//				 String url = "jdbc:sqlserver://localhost:1433;" +
-//						 "databaseName=HotelDBMS;" +
-//						 "encrypt=true;" +
-//						 "trustServerCertificate=true";
-//						 String user = "sa";
-//						 String pass = "root";
 			
 			Scanner scanner=new Scanner (System.in);
 			System.out.println("the first table");
+			System.out.println("Enter id");
+			int id=scanner.nextInt();
 			System.out.println("Enter Hotel Name");
 			String hotel_name=scanner.next();
 			System.out.println("Enter hotel location");
@@ -153,91 +139,92 @@ public class HotaleTask {
 			System.out.println("Enter is_Active ");
 			String hotel_is_Activee   =scanner.next();
 			/////////////////////////////
-			System.out.println("the second table");
-			System.out.println("Enter id");
-			int id=scanner.nextInt();
-			System.out.println("Enter room_type_name");
-			String room_type_name =scanner.next();
-			System.out.println("Enter created_date");
-			String room_type_created_date =scanner.next();
-			System.out.println("Enter updated_date ");
-			String room_type_updated_date =scanner.next();
-			System.out.println("Enter is_Active");
-			String room_type_is_Active =scanner.next();
+//			System.out.println("the second table");
+//			System.out.println("Enter id");
+//			int id=scanner.nextInt();
+//			System.out.println("Enter room_type");
+//			String room_type =scanner.next();
+//			System.out.println("Enter created_date");
+//			String room_type_created_date =scanner.next();
+//			System.out.println("Enter updated_date ");
+//			String room_type_updated_date =scanner.next();
+//			System.out.println("Enter is_Active");
+//			String room_type_is_Active =scanner.next();
 			//////////
-			System.out.println("the third table");
-			System.out.println("Enter Rooms id");
-			int Rooms_id=scanner.nextInt();
-			System.out.println("Enter room_type_id");
-			int room_type_id =scanner.nextInt();
-			System.out.println("Enter hotel_id ");
-			int hotel_id  =scanner.nextInt();
-			System.out.println("Enter created_date");
-			String Rooms_date =scanner.next();
-			System.out.println("Enter updated_date ");
-			String Rooms_update_date =scanner.next();
-			System.out.println("Enter is_Active");
-			String Rooms_Active =scanner.next();
-			////////
-			System.out.println("the 4 table");
-			System.out.println("Enter guest_id");
-			int guest_id=scanner.nextInt();
-			System.out.println("Enter guest_name");
-			String guest_name =scanner.next();
-			System.out.println("Enter guest_phone ");
-			String guest_phone  =scanner.next();
-			System.out.println("Enter guest_accompanying_members ");
-			int guest_accompanying_members =scanner.nextInt();
-			System.out.println("Enter guest_payment_amount  ");
-			int guest_payment_amount  =scanner.nextInt();
+//			System.out.println("the third table");
+//			System.out.println("Enter guest id");
+//			int guest_id =scanner.nextInt();
+//			System.out.println("Enter guest name");
+//			String guest_name =scanner.next();
+//			System.out.println("Enter guest_phone ");
+//     		String guest_phone  =scanner.next();
+//			System.out.println("Enter guest_accompanying_members ");
+//			int guest_accompanying_members =scanner.nextInt();
+//			System.out.println("Enter updated_date ");
+//			String Rooms_update_date =scanner.next();
+//			System.out.println("Enter is_Active");
+//			String Rooms_Active =scanner.next();
+//			////////
+//			System.out.println("the 4 table");
+//			System.out.println("Enter guest_id");
+//			int guest_id=scanner.nextInt();
+//			System.out.println("Enter guest_name");
+//			String guest_name =scanner.next();
+//			System.out.println("Enter guest_phone ");
+//			String guest_phone  =scanner.next();
+//			System.out.println("Enter guest_accompanying_members ");
+//			int guest_accompanying_members =scanner.nextInt();
+//			System.out.println("Enter guest_payment_amount  ");
+//			int guest_payment_amount  =scanner.nextInt();
 //			System.out.println("Enter Rooms id");
 //			int Rooms_id=scanner.nextInt();
 //			System.out.println("Enter hotel_id ");
 //			int hotel_id  =scanner.nextInt();
-			System.out.println("Enter created_date");
-			String guest_date =scanner.next();
-			System.out.println("Enter updated_date ");
-			String guest_update_date =scanner.next();
-			System.out.println("Enter is_Active");
-			String guest_Active =scanner.next();
+//			System.out.println("Enter created_date");
+//			String guest_date =scanner.next();
+//			System.out.println("Enter updated_date ");
+//			String guest_update_date =scanner.next();
+//			System.out.println("Enter is_Active");
+//     		String guest_Active =scanner.next();
+//			/////////
+//			System.out.println("the 5 table");
+//			System.out.println("Enter Employee_Typ id");
+//			int Employee_Type_id=scanner.nextInt();
+//			System.out.println("Enter employee_type_name ");
+//			String employee_type_name  =scanner.next();
+//			
+//			System.out.println("Enter created_date");
+//			String Employee_Typ_date =scanner.next();
+//			System.out.println("Enter updated_date ");
+//			String Employee_Typ_update_date =scanner.next();
+//			System.out.println("Enter is_Active");
+//			String Employee_Typ_Active =scanner.next();
+//			/////////
+//			System.out.println("the 6 table");
+//			System.out.println("Enter Employees id");
+//			int Employees_id=scanner.nextInt();
+//			
+//			System.out.println("Enter created_date");
+//			String Employees_date =scanner.next();
+//			System.out.println("Enter updated_date ");
+//			String Employees_update_date =scanner.next();
+//			System.out.println("Enter is_Active");
+//			String Employees_Active =scanner.next();
 			/////////
-			System.out.println("the 5 table");
-			System.out.println("Enter Employee_Typ id");
-			int Employee_Type_id=scanner.nextInt();
-			System.out.println("Enter employee_type_name ");
-			String employee_type_name  =scanner.next();
-			
-			System.out.println("Enter created_date");
-			String Employee_Typ_date =scanner.next();
-			System.out.println("Enter updated_date ");
-			String Employee_Typ_update_date =scanner.next();
-			System.out.println("Enter is_Active");
-			String Employee_Typ_Active =scanner.next();
-			/////////
-			System.out.println("the 6 table");
-			System.out.println("Enter Employees id");
-			int Employees_id=scanner.nextInt();
-			
-			System.out.println("Enter created_date");
-			String Employees_date =scanner.next();
-			System.out.println("Enter updated_date ");
-			String Employees_update_date =scanner.next();
-			System.out.println("Enter is_Active");
-			String Employees_Active =scanner.next();
-			/////////
+     		
 
 			// String sql = "insert into Table_1 values('" + name+ "'," + roll + ",'" + cls+ "')";
 	           //String sql = "INSERT INTO Hotels ('" + id + "'," + hotel_name + "'," + hotel_location + "'," + created_date
 	           //+ updated_date + "'," + is_Active + "')";
-	            String sql = "INSERT INTO Hotels (hotel_name,hotel_location,created_date,updated_date,is_Active)"+
-	                    "VALUES ("+"'"+hotel_name+"','"+hotel_location+"','"+hotel_created_date+"','"+hotel_updated_date+ "',"+hotel_is_Activee+");"
+	            String sql = "INSERT INTO Hotels (id,hotel_name,hotel_location,created_date,updated_date,is_Active)"+
+	                    "VALUES ("+"'"+id+"','"+hotel_name+"','"+hotel_location+"','"+hotel_created_date+"','"+hotel_updated_date+ "',"+hotel_is_Activee+")";
 	                    
-	            +"INSERT INTO Employee_Type (id , room_type_id , hotel_id , created_date , updated_date,is_Active  ) " +
-	            "VALUES ('" + id + "','" + room_type_name + "','" + room_type_created_date +"','" + room_type_updated_date + "','" + room_type_is_Active + "');"
-	                    
-	                +"INSERT INTO Rooms (id, employee_type_name, created_date, updated_date, is_active) " +
-	            "VALUES ('" + Rooms_id + "','" + room_type_id + "','" + hotel_id +"','" + Rooms_date + "','" + Rooms_update_date +"','"+Rooms_Active+"')";
+//	            +"INSERT INTO Employee_Type (id ,  room_type, hotel_id , created_date , updated_date,is_Active  ) " +
+//	            "VALUES ("+"'" + id + "','" + room_type + "','" + room_type_created_date +"','" + room_type_updated_date + "','" + room_type_is_Active + "');"
 //	                    
+//	                +"INSERT INTO guest  (guest id,guest name, guest_phone, guest_accompanying_members, guest_payment_amount, is_active,Rooms id,hotel_id,created_date,updated_date , is_Active) " +
+//	            "VALUES ("+"'" + guest_id + "','" + guest_name + "','" + guest_phone +"','" + guest_accompanying_members + "','" + guest_payment_amount +"','"+Rooms_id+"','"+hotel_id+"','"+guest_date+"','"+guest_update_date+"','"+guest_Active+"')";
+                    
 //	            +"INSERT INTO Guests (id, guest_name, guest_phone, guest_accompanying_members, guest_payment_amount,room_id,"
 //	            + "hotel_id,created_date,updated_date,is_active) " +
 //	            "VALUES (" + guest_id + ",'" + guest_name + "','" + guest_phone +"'," + guest_accompanying_members + ",'"
